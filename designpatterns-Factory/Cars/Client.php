@@ -17,17 +17,15 @@ echo 'Type of the car is: ' . $carSUV->getModel(). "\n";
 echo 'Type of the car is: ' . $carIndica->getModel(). "\n";
 
 
+$sedanFactory = new sedanFactory();
+$sedanCar = $sedanFactory->createCar();
+echo 'Car type: ' . $sedanCar->getModel(). "\n";
 
+$suvFactory = new suvFactory();
+$suvCar = $suvFactory->createCar();
+echo 'Car type: ' . $suvCar->getModel()."\n";
 
-// $sedanFactory = new sedanFactory();
-// $sedanCar = $sedanFactory->createCar();
-// echo 'Car type: ' . $sedanCar->getModel(). "\n";
-
-// $suvFactory = new suvFactory();
-// $suvCar = $suvFactory->createCar();
-// echo 'Car type: ' . $suvCar->getModel()."\n";
-
-// $indicaFactory = new indicaFactory();
-// $indicaCar = $indicaFactory->createCar();
-// echo 'Car type: '. $indicaCar->getModel(). "\n";
+$indicaFactory = new indicaFactory();
+$indicaCar = $indicaFactory->createCar();
+echo 'Car type: '. $indicaCar->getModel(). "\n";
 ?>
